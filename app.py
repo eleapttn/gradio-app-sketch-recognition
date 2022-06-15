@@ -3,9 +3,6 @@ import gradio as gr
 import tensorflow as tf
 import cv2
 
-print(gr.__version__)
-print(tf.__version__)
-print(cv2.__version__)
 # app title
 title = "Welcome on your first sketch recognition app!"
 

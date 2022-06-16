@@ -43,4 +43,5 @@ def predict(img):
 label = gr.outputs.Label(num_top_classes=3)
 
 # open Gradio interface for sketch recognition
-gr.Interface(fn=predict, inputs="sketchpad", outputs=label, title=title, description=head, article=ref).launch()
+interface = gr.Interface(fn=predict, inputs="sketchpad", outputs=label, title=title, description=head, article=ref)
+interface.launch(server_name="0.0.0.0", server_port=8080)

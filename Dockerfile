@@ -5,7 +5,7 @@ ADD . /workspace
 
 RUN pip install -r requirements.txt
 
-CMD [ "python3" , "/workspace/app.py", "--server.address=0.0.0.0" ]
+CMD [ "python3" , "/workspace/app.py" ]
 
 RUN chown -R 42420:42420 /workspace
 

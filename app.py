@@ -24,7 +24,7 @@ img_size = 28
 labels = ["zero", "one", "two", "three", "four", "five", "six", "seven", "height", "nine"]
 
 # load model (trained on MNIST dataset)
-model = tf.keras.models.load_model("/model/sketch_recognition_numbers_model.h5")
+model = tf.keras.models.load_model("model/sketch_recognition_numbers_model.h5")
 
 # prediction function for sketch recognition
 def predict(img):
